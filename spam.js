@@ -1,21 +1,15 @@
 // hack the world
 const KahootSpam = require('kahoot-spam')
-const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const rl = readline.createInterface({ input, output });
 
-readline.question('What is the kahoot code', code => {
-  readline.close();
-});
+// inputs
+const code = await rl.question('What is the code');
+const name = await rl.question('What are the names of the bots');
+const numofbots = await rl.question('What is the number of bots');
 
-readline.question('What is the name of the bot', name => {
-  readline.close();
-});
-
-readline.question('What is the number of bots', numofbots => {
-  readline.close();
-});
-
+// spam bots
 let api = KahootSpam
 api.spamWithAnswers(code, name, numofbots, false)
+
+// close readlines input output interface
+rl.close()
