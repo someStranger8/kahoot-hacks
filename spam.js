@@ -1,4 +1,8 @@
-// hack the world
+/*
+ Time to hack the world
+ Author: someStranger8
+*/
+
 const KahootSpam = require('kahoot-spam')
 const rl = readline.createInterface({ input, output });
 
