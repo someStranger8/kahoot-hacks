@@ -7,13 +7,13 @@ const KahootSpam = require('kahoot-spam')
 const rl = readline.createInterface({ input, output });
 
 // inputs
-const code = await rl.question('What is the code');
-const name = await rl.question('What are the names of the bots');
-const numofbots = await rl.question('What is the number of bots');
+var code = window.prompt("[*] Enter the code: ");
+var name = window.prompt("[*] Enter the names of the bots: ");
+var numbots = window.prompt("[*] Enter the number of bots: ");
 
 // spam bots
 let api = KahootSpam
-api.spamWithAnswers(code, name, numofbots, false)
+api.spamWithAnswers(code, name, numbots, false)
 
 // close readlines input output interface
 rl.close()
