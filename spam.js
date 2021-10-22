@@ -13,6 +13,3 @@ var numbots = "10";
 // spam bots
 let api = KahootSpam
 api.spamWithAnswers(code, name, numbots, false)
-
-// close readlines input output interface
-rl.close()
