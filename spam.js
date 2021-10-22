@@ -4,12 +4,11 @@
 */
 
 const KahootSpam = require('kahoot-spam')
-const rl = readline.createInterface({ input, output });
 
-// inputs
-var code = window.prompt("[*] Enter the code: ");
-var name = window.prompt("[*] Enter the names of the bots: ");
-var numbots = window.prompt("[*] Enter the number of bots: ");
+// varibles
+var code = "1111111";
+var name = "name";
+var numbots = "10";
 
 // spam bots
 let api = KahootSpam
