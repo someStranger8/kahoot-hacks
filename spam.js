@@ -6,9 +6,9 @@
 const KahootSpam = require('kahoot-spam')
 
 // varibles
-var code = "1111111";
+var code = 1111111;
 var name = "name";
-var numbots = "10";
+var numbots = 10;
 
 // spam bots
 let api = KahootSpam
