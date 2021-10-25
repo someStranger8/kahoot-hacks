@@ -9,3 +9,10 @@ cd kahoot-hacks
 chmod 777 main.sh
 ./main.sh
 ```
+
+or if on windows
+
+```
+cd /path/to/file
+main.bat
+```
