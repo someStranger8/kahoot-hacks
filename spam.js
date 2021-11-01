@@ -12,4 +12,4 @@ var numbots = 10;
 
 // spam bots
 let api = KahootSpam
-api.spamWithAnswers(code, name, numbots, 0.5)
+api.spamWithAnswers(code, name, numbots, true)
