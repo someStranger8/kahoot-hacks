@@ -1,14 +1,12 @@
 
-// time to hack
-
-const KahootSpam = require('kahoot-spam')
+const KahootSpam = require('kahoot-spam');
+const prompt = require("prompt-sync")({ sigint: true });
 
 // varibles
-var code = 1111111;
-var name = "name";
-var numbots = 10;
-var i = 1;
+var code = prompt("[*] enter kahoot code: ");
+var name = prompt("[*] enter bot name: ");
+var numbots = prompt("[*] enter amount of bots: ");
 
 // spam bots with answers
 let api = KahootSpam
-while (i < 10) return api.spamWithAnswers(code, name, numbots, true);
+api.spamWithAnswers(code, name, numbots, true);
